@@ -1,7 +1,16 @@
 MessengerPopup
 -------
 
-#####Example using jsDelivr
+[1]: <https://nathangath.com/kenwheeler/MessengerPopup>
+
+_add a Facebook Messenger widget to your site_
+
+### Demo
+
+
+https://nathangath.github.com/MessengerPopup/example.html
+
+###Instructions
 
 Just add a link to the css file in your `<head>`:
 ```html
@@ -19,7 +28,7 @@ Then, before your closing ```<body>``` tag add:
 <script src="path/to/messengerPopup.js"></script>
 ```
 
-#### License
+### License
 
 Copyright © 2016 Nathan Gathright
 Licensed under the MIT license.
