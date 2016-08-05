@@ -1,10 +1,10 @@
 var body = document.getElementsByTagName('body');
 var messengerButton = document.getElementById("messengerButton");
 var messengerEmail = messengerButton.getAttribute('href');
-var messengerPage = messengerButton.getAttribute('data-messengerPage');
-
+var messengerPage = 'https://www.facebook.com/' + messengerButton.getAttribute('data-messengerPage');
+var messengerpopout = 'https://m.me/' + messengerButton.getAttribute('data-messengerPage');
 //injecting elements into the DOM
-document.body.innerHTML += '<div id="fb-root"></div><div id="messengerWrapper" class="messengerHidden"><div class="messengerTitleBar"><a href="'+messengerPage+'" target="_blank">Message Us</a><div class="messengerFloat"><a href="'+messengerEmail+'" class="mail-link">Email</a><a id="messengerClose" onclick="toggleVisibility();">×</a></div></div><div class="fb-page" data-href="'+messengerPage+'" data-tabs="messages" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"></div></div>';
+document.body.innerHTML += '<div id="fb-root"></div><div id="messengerWrapper" class="messengerHidden"><div class="messengerTitleBar"><a href="'+messengerpopout+'" target="_blank" onclick="OpenInNewTab()">Message Us</a><div class="messengerFloat"><a href="'+messengerEmail+'" class="mail-link">Email</a><a href="'+messengerpopout+'" target="_blank" class="icon-popout" onclick="OpenInNewTab()"></a><a id="messengerClose" onclick="toggleVisibility();">×</a></div></div><div class="fb-page" data-href="'+messengerPage+'" data-tabs="messages" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"></div></div>';
 
 //running the Facebook SDK
 (function(d, s, id) {
@@ -19,4 +19,11 @@ document.body.innerHTML += '<div id="fb-root"></div><div id="messengerWrapper" c
 function toggleVisibility(){
   event.preventDefault();
   document.getElementById('messengerWrapper').classList.toggle('messengerHidden');
+}
+
+//popping out the chat widget
+function OpenInNewTab() {
+  event.preventDefault();
+  var screenwidth = screen.width-500;
+  window.open(messengerpopout, '_blank',"toolbar=no,scrollbars=yes,resizable=yes,width=500,height=800,left="+screenwidth);
 }
