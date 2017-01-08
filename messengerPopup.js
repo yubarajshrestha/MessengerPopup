@@ -25,24 +25,24 @@
         document.body.appendChild(fbRoot);
 
         //running the Facebook SDK
-        // (function(d, s, id) {
-        //   var js, fjs = d.getElementsByTagName(s)[0];
-        //   if (d.getElementById(id)) return;
-        //   js = d.createElement(s); js.id = id;
-        //   js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-        //   fjs.parentNode.insertBefore(js, fjs);
-        // }(document, 'script', 'facebook-jssdk'));
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
       }
   }, false);
-
-  var messengerTitleLeft = document.getElementById("messengerFloat--left");
-  var messengerTitleRight = document.getElementById("messengerFloat--right");
 
   var messengerWrapper = document.createElement('div');
   messengerWrapper.setAttribute('id', 'messengerWrapper');
   messengerWrapper.setAttribute('class', 'messengerHidden');
   messengerWrapper.innerHTML = '<div class="messengerTitleBar"><div id="messengerFloat--left"></div><div id="messengerFloat--right"><a href="'+messengerEmail+'" ><i class="messengericon messengericon-email"></i></a></div></div><div class="fb-page" data-href="'+messengerPage+'" data-tabs="messages" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"></div>';
   document.body.appendChild(messengerWrapper);
+
+  var messengerTitleLeft = document.getElementById("messengerFloat--left");
+  var messengerTitleRight = document.getElementById("messengerFloat--right");
 
   var messengerPopoutLink = document.createElement('a');
   messengerPopoutLink.setAttribute('id', 'messengerTitle');
