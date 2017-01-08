@@ -7,7 +7,7 @@ _add a Facebook Messenger widget to your site_
 
 ### Demo
 
-http://projects.nathangathright.com/messengerPopup/
+https://nathangath.github.io/MessengerPopup/
 
 ###Instructions
 
