@@ -4,7 +4,7 @@ var messengerEmail = messengerButton.getAttribute('href');
 var messengerPage = 'https://www.facebook.com/' + messengerButton.getAttribute('data-messengerPage');
 var messengerpopout = 'https://m.me/' + messengerButton.getAttribute('data-messengerPage');
 //injecting elements into the DOM
-document.body.innerHTML += '<div id="fb-root"></div><div id="messengerWrapper" class="messengerHidden"><div class="messengerTitleBar"><a href="'+messengerpopout+'" target="_blank" onclick="OpenInNewTab()">Message Us</a><div class="messengerFloat"><a href="'+messengerEmail+'" class="mail-link">Email</a><a href="'+messengerpopout+'" target="_blank" class="icon-popout" onclick="OpenInNewTab()"></a><a id="messengerClose" onclick="toggleVisibility();">×</a></div></div><div class="fb-page" data-href="'+messengerPage+'" data-tabs="messages" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"></div></div>';
+document.body.innerHTML += '<div id="fb-root"></div><div id="messengerWrapper" class="messengerHidden"><div class="messengerTitleBar"><a href="'+messengerpopout+'" target="_blank" onclick="OpenInNewTab()">Message Us</a><div class="messengerFloat"><a href="'+messengerEmail+'" class="icon-email"></a><a href="'+messengerpopout+'" target="_blank" class="icon-popout" onclick="OpenInNewTab()"></a><a id="messengerClose" class="icon-close" onclick="toggleVisibility();"></a></div></div><div class="fb-page" data-href="'+messengerPage+'" data-tabs="messages" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"></div></div>';
 
 //running the Facebook SDK
 (function(d, s, id) {
