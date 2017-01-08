@@ -40,7 +40,7 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-close' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-close</title><line x1='3' y1='3' x2='21' y2='21' /><line x1='21' y1='3' x2='3' y2='21'/></svg>") no-repeat;
+  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-close' fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-close</title><line x1='3' y1='3' x2='21' y2='21' /><line x1='21' y1='3' x2='3' y2='21'/></svg>") no-repeat;
 }
 
 .icon-popout {
@@ -48,7 +48,7 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-email' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-email</title><rect x='3' y='5' width='18' height='14'/><polyline points='21 5 12 13 3 5'/></svg>") no-repeat;
+  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-email' fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-email</title><rect x='3' y='5' width='18' height='14'/><polyline points='21 5 12 13 3 5'/></svg>") no-repeat;
 }
 
 .icon-close {
@@ -56,7 +56,7 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-external' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-external</title><polyline points='19 13 19 21 3 21 3 5 11 5' /><polyline points='21 9.54 21 3 14.46 3'/><line x1='21' y1='3' x2='13' y2='11'/></svg>") no-repeat;
+  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-external' fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-external</title><polyline points='19 13 19 21 3 21 3 5 11 5' /><polyline points='21 9.54 21 3 14.46 3'/><line x1='21' y1='3' x2='13' y2='11'/></svg>") no-repeat;
 }
 
 #messengerClose {
