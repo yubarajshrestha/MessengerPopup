@@ -1,21 +1,13 @@
 MessengerPopup
 -------
 
-[1]: <http://nathangathright.com/messengerPopup/>
+##Introduction
 
-_add a Facebook Messenger widget to your site_
+If you'd live to allow your site's visitors to contact you via Facebook Messenger without leaving your site, then you've come to the right place. Facebook only allows Messenger to be embedded via the Facebook Page plugin. This project is a wrapper for the Facebook Page plugin that styles it as a live-chat popup.
 
 ### Demo
 
 https://nathangath.github.io/MessengerPopup/
-
-###Introduction
-
-If you'd live to allow your site's visitors to contact you via Facebook Messenger without leaving your site, then you've come to the right place. Facebook only allows Messenger to be embedded via the Facebook Page plugin. This project is a wrapper for the Facebook Page plugin that styles it as a live-chat popup.
-
-###Introduction
-
-If you'd live to allow your site's visitors to contact you via Facebook Messenger without leaving your site, then you've come to the right place. Facebook only allows Messenger to be embedded via the Facebook Page plugin. This project is a wrapper for the Facebook Page plugin that styles it as a live-chat popup.
 
 ###Limitations
 
