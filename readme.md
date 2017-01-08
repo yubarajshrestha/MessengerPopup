@@ -18,7 +18,7 @@ Just add a link to the css file in your `<head>`:
 
 Add a link to your HTML specifying your Facebook Page name in the data-attribute and adding an email as a fallback.
 ```html
-<a id="messengerButton" href="mailto:YOUREMAILHERE@GMAIL.COM" data-messengerPage="https://www.facebook.com/YOURBRANDPAGEHERE" onclick="toggleVisibility();">Message Us</a>
+<a id="messengerButton" href="mailto:YOUREMAILHERE@GMAIL.COM" data-messengerPage="YOURBRANDPAGEHERE" onclick="toggleVisibility();">Message Us</a>
 ```
 
 Then, before your closing ```<body>``` tag add:
