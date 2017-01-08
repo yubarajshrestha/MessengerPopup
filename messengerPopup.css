@@ -1,74 +1,70 @@
+.messengerTitleBar a, .messengericon {
+  display: inline-block;
+  vertical-align: middle
+}
 #messengerWrapper {
   position: fixed;
-  right: 32px;
+  right: 0;
   bottom: 0;
-  border-radius: 4px 4px 0 0;
-  width: 320px;
-  box-shadow: 0 32px 64px rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
   overflow: hidden;
   background: #FFF;
-  transition: all 0.2s ease;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, .5);
 }
-
 #messengerWrapper.messengerHidden {
+  -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
-
 .messengerTitleBar {
   background: #4080ff;
-  padding: 1em;
+  padding: 0 8px;
+  overflow: hidden
 }
-
+.messengerFloat--left {
+  float: left
+}
+.messengerFloat--right {
+  float: right
+}
 .messengerTitleBar a {
   text-decoration: none;
   cursor: pointer;
   color: #FFF;
   opacity: .5;
-  transition: all 0.2s ease;
+  padding: 0 4px;
+  line-height: 3;
+  transition: all .2s ease
 }
-
 .messengerTitleBar a:hover {
-  opacity: 1;
+  opacity: 1
+}
+.messengerlineheight {
+  font-size: 1.25em;
+  line-height: 1.5em
+}
+.messengericon {
+  width: 1.5em;
+  height: 1.5em
+}
+.messengericon-email {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-email</title><rect x='3' y='5' width='18' height='14'/><polyline points='21 5 12 13 3 5'/></svg>")
+}
+.messengericon-popout {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-external</title><polyline points='19 15 19 19 5 19 5 5 9 5'/><polyline points='13 5 19 5 19 11'/><line x1='18' y1='6' x2='11' y2='13'/></svg>")
+}
+.messengericon-close {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-close</title><line x1='5' y1='5' x2='19' y2='19'/><line x1='19' y1='5' x2='5' y2='19'/></svg>")
 }
 
-.messengerFloat {
-  float:right;
-}
-
-.icon-email {
-  margin-left: .5rem;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-email' fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-email</title><rect x='3' y='5' width='18' height='14'/><polyline points='21 5 12 13 3 5'/></svg>") no-repeat;
-}
-
-.icon-popout {
-  margin-left: .5rem;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-external' fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-external</title><polyline points='19 13 19 21 3 21 3 5 11 5' /><polyline points='21 9.54 21 3 14.46 3'/><line x1='21' y1='3' x2='13' y2='11'/></svg>") no-repeat;
-}
-
-.icon-close {
-  margin-left: .5rem;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: url("data:image/svg+xml;utf8,<svg class='messengerPopup-icon' id='mpop-close' fill='none' stroke='#FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title>messenger-close</title><line x1='3' y1='3' x2='21' y2='21' /><line x1='21' y1='3' x2='3' y2='21'/></svg>") no-repeat;
-}
-
-#messengerClose {
-  font-size: 20px;
-  line-height: 1rem;
-  margin-left: .5rem;
-}
-
-@media (max-width:500px) {
+@media (min-width:500px) {
   #messengerWrapper {
-    right: 0;
-    width: 100%;
-    height: 100%;
+    right: 32px;
+    width: 320px;
+    height: auto;
+    border-radius: 4px 4px 0 0;
+    font-size: 12px;
+    transition: all .2s ease
   }
 }
