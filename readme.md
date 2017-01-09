@@ -11,7 +11,7 @@ https://nathangath.github.io/MessengerPopup/
 
 ###Limitations
 
-There's one severe limitation to this method: Visitors can only send one message. Any back-and-forth conversation must take place in a Facebook-owned app or website. If this is a deal-breaker, just direct people to [m.me/YOURBRANDPAGEHERE](http://m.me/nathangathrightcom).
+There's one severe limitation to this method: Visitors can only send one message. Any back-and-forth conversation must take place in a Facebook-owned app or website. If this is a deal-breaker, just direct people to [m.me/YOURBRANDPAGEHERE](http://m.me/nathangathrightcom). There's also an issue with mobile Safari that's unfixable. When a user selects an input field in Safari on iOS, Safari zooms the website until the text is sized to at least 16px. Facebook's chat widget font-size is only 14px.
 
 ###Features
 
