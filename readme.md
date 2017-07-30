@@ -1,7 +1,7 @@
 MessengerPopup
 -------
 
-##Introduction
+## Introduction
 
 If you'd live to allow your site's visitors to contact you via Facebook Messenger without leaving your site, then you've come to the right place. Facebook only allows Messenger to be embedded via the Facebook Page plugin. This project is a wrapper for the Facebook Page plugin that styles it as a live-chat popup.
 
@@ -9,15 +9,15 @@ If you'd live to allow your site's visitors to contact you via Facebook Messenge
 
 https://nathangathright.github.io/MessengerPopup/
 
-###Limitations
+### Limitations
 
 There's one severe limitation to this method: Visitors can only send one message. Any back-and-forth conversation must take place in a Facebook-owned app or website. If this is a deal-breaker, just direct people to [m.me/YOURBRANDPAGEHERE](http://m.me/nathangathrightcom). There's also an issue with mobile Safari that's unfixable. When a user selects an input field in Safari on iOS, Safari zooms the website until the text is sized to at least 16px. Facebook's chat widget font-size is only 14px.
 
-###Features
+### Features
 
 This project gracefully falls back to a `mailto:` link if the visitor's browser doesn't support javascript. It's also mobile-first and doesn't load Facebook's javascript until the user clicks on the button. I've added a loading spinner to the background in case Facebook's SDK takes a white to load. If the visitor has an adblocker that blocks Facebook's SDK, then the spinner will continue to spin indefinitely, but the visitor will still have access to the email and m.me links.
 
-###Instructions
+### Instructions
 
 Include the CSS in the `<head>`:
 ```html
