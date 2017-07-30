@@ -7,7 +7,7 @@ If you'd live to allow your site's visitors to contact you via Facebook Messenge
 
 ### Demo
 
-https://nathangath.github.io/MessengerPopup/
+https://nathangathright.github.io/MessengerPopup/
 
 ###Limitations
 
